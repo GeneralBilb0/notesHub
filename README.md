@@ -5,16 +5,14 @@ Work In Progress
 ##### Backend
 1. When using functions please put the Curly bracket right after the functions.
 eg.
-```
+```javascript
 void testFunction (){
-
 }
 ```
-2. All function names have a lowercase first for the first word and an
-uppercase for each word after that.
+2. All function names have a lowercase for the first word and an uppercase for each word after that.
 eg.
-```
-		testFunction();
-		helloWorld();
+```javascript
+testFunction();
+helloWorld();
 ```
 ##### If you can find anything else add it I can help with .md syntax
