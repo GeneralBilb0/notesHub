@@ -90,6 +90,7 @@
        	</ul>
       </div>
     </nav>
+
     <div class="modal fade" id="myModal">
     	<div class="modal-dialog">
           <div class="modal-content">
@@ -98,34 +99,42 @@
               <h4 class="modal-title">Sign Up</h4>
             </div>
             <div class="modal-body">
-              <div class="form-group">
-            <label for="exampleInputEmail1">Full Name</label>
-            <input class="form-control" id="exampleInputEmail1" placeholder="Enter your full name" type="email">
-            </div>
-              <div class="form-group">
-        		<label for="exampleInputEmail1">Scotch Email address</label>
-        		<input class="form-control" id="exampleInputEmail1" placeholder="Enter scotch email" type="email">
-      		  </div>
-    		  <div class="form-group">
-    		  	<label for="exampleInputPassword1">Set Password</label>
-    			<input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
-    		  </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Confirm Password</label>
-          <input class="form-control" id="exampleInputPassword1" placeholder="Confirm Password" type="password">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Year Level</label>
-          <input class="form-control" id="exampleInputPassword1" placeholder="Year Level" type="email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Student ID</label>
-          <input class="form-control" id="exampleInputPassword1" placeholder="Student ID" type="email">
-          </div>
+              <form action="account.php" method="post" id="signUpForm">
+
+                <div class="form-group">
+                  <label for="inputFullName">Full Name</label>
+                  <input class="form-control" id="inputFullName" placeholder="Enter your full name" type="email">
+                </div>
+
+                <div class="form-group">
+        		      <label for="inputEmail">Scotch Email address</label>
+        	  	    <input class="form-control" id="inputEmail" placeholder="Enter scotch email" type="email">
+      		      </div>
+
+    		        <div class="form-group">
+    		  	      <label for="inputPassword">Set Password</label>
+    			        <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+    		        </div>
+
+                <div class="form-group">
+                  <label for="inputConfirmPassword">Confirm Password</label>
+                  <input class="form-control" id="inputConfirmPassword" placeholder="Confirm Password" type="password">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputYearLevel">Year Level</label>
+                  <input class="form-control" id="inputYearLevel" placeholder="Year Level" type="email">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputID">Student Number</label>
+                  <input class="form-control" id="inputID" placeholder="Student Number" type="email">
+                </div>
+
             </div>
             <div class="modal-footer">
               <a href="#" data-dismiss="modal" class="btn">Close</a>
-              <a href="#" class="btn btn-primary">Sign Up</a>
+              <a onclick="document.getElementById('signUpForm').submit();" class="btn btn-primary">Sign Up</a>
             </div>
           </div>
         </div>
