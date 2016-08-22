@@ -1,9 +1,6 @@
 # notesHub
-Cancer
-
-Caughey you are officially banned from using the following words:
+these are all good
 	Cancer
 	Autism
 	Cancaaaaaar
 	Tism
-	
