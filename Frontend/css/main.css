@@ -1,3 +1,7 @@
+* {
+  font-family: 'Raleway', sans-serif;
+
+}
 .navbar-right {
   margin-right: 2.5%;
 }
@@ -28,7 +32,7 @@
   background: #ffffff;
 }
 .modal-backdrop.modal-backdrop-fullscreen.in {
-  opacity: .97;
+  opacity: .70;
   filter: alpha(opacity=97);
 }
 
@@ -106,8 +110,8 @@
     }
 }
 .navbar-custom {
-  background-color: #22A7F0;
-  border-color: #446CB3;
+  background-color: #9A12B3;
+  border-color: #663399;
   border-bottom-width: 3.5px;
 }
 .navbar-custom .navbar-brand {
@@ -127,7 +131,7 @@
 .navbar-custom .navbar-nav > li > a:hover,
 .navbar-custom .navbar-nav > li > a:focus {
   color: #ffffff;
-  background-color: #1F3A93;
+  background-color: #BF55EC;
   -webkit-transition: background-color ease-out 0.5s;
   -moz-transition: background-color ease-out 0.5s;
   -o-transition: background-color ease-out 0.5s;
@@ -137,7 +141,7 @@
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: #c0c0c0;
-  background-color: #1F3A93;
+  background-color: #BF55EC;
 }
 .navbar-custom .navbar-nav > .disabled > a,
 .navbar-custom .navbar-nav > .disabled > a:hover,
@@ -167,7 +171,7 @@
 .navbar-custom .navbar-nav > .open > a,
 .navbar-custom .navbar-nav > .open > a:hover,
 .navbar-custom .navbar-nav > .open > a:focus {
-  background-color: #1F3A93;
+  background-color: #BF55EC;
   color: #c0c0c0;
 }
 .navbar-custom .navbar-nav > .open > a .caret,
@@ -207,4 +211,7 @@
 }
 .navbar-custom .navbar-link:hover {
   color: #c0c0c0;
+}
+img {
+ width: 100%; height: auto;
 }
