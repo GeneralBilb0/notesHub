@@ -3,146 +3,121 @@
   <head>
     <meta charset="utf-8">
     <title>notesHub</title>
-    <!--- Meta's --->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
     <!--- Bootstrap & Modified Bootstrap --->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.0/css/bootstrap-select.min.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.0/js/bootstrap-select.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.0/js/i18n/defaults-*.min.js"></script>
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!--- CSS --->
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="Frontend/css/main.css" charset="utf-8">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.0/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.0/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.0/js/i18n/defaults-*.min.js"></script>
+
+
   </head>
+
   <body>
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">notesHub</a>
+
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="#">notesHub</a>
+  </div>
+  <div class="collapse navbar-collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+    <li><a href="#">Recommended Notes</a></li>
+    <li><a href="#">Recently Published Notes</a></li>
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sort By Grade</a>
+     <ul class="dropdown-menu">
+       <li><a href="#">Year 7</a></li>
+       <li><a href="#">Year 8</a></li>
+       <li><a href="#">Year 9</a></li>
+       <li><a href="#">Year 10</a></li>
+       <li><a href="#">VCE 1 &amp; 2</a></li>
+       <li><a href="#">VCE 3 &amp; 4</a></li>
+      </ul>
+    </li>
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sort By Subject</a>
+      <ul class="dropdown-menu">
+       <li><a href="#">Maths</a></li>
+       <li><a href="#">English</a></li>
+       <li><a href="#">English Language</a></li>
+       <li><a href="#">Sciences</a></li>
+       <li><a href="#">Histories</a></li>
+       <li><a href="#">Politics</a></li>
+       <li><a href="#">Commerce</a></li>
+       <li><a href="#">Design &amp; Technology</a></li>
+       <li><a href="#">LOTE</a></li>
+     </ul>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+    <li><a href="#success" data-toggle="modal" data-target="#success"><b>Join Us</b></a></li>
+      <li class="dropdown">
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+       	<ul id="login-dp" class="dropdown-menu">
+       		<li>
+       			<div class="row">
+       				<div class="col-md-12">
+                <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+       							<div class="form-group">
+       							 <label class="sr-only" for="exampleInputEmail2">Scotch Email address</label>
+       							 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Scotch Email address" required>
+       							</div>
+       							<div class="form-group">
+       								<label class="sr-only" for="exampleInputPassword2">Password</label>
+       								<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                    <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+       						</div>
+       						<div class="form-group">
+       							<button type="submit" class="btn btn-primary btn-block">Sign in</button>
+       						</div>
+       						<div class="checkbox">
+       							<label>
+       								<input type="checkbox"> keep me logged-in
+       							</label>
+       						</div>
+       					</form>
+       				</div>
+       			</div>
+       		</li>
+       	</ul>
       </div>
-      <div class="collapse navbar-collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Recommended Notes</a></li>
-          <li><a href="#">Recently Published Notes</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sort By Grade</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Year 7</a></li>
-              <li><a href="#">Year 8</a></li>
-              <li><a href="#">Year 9</a></li>
-              <li><a href="#">Year 10</a></li>
-              <li><a href="#">VCE 1 &amp; 2</a></li>
-              <li><a href="#">VCE 3 &amp; 4</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sort By Subject</a>
-            <ul class="dropdown-menu">
-             <li><a href="#">Maths</a></li>
-             <li><a href="#">English</a></li>
-             <li><a href="#">English Language</a></li>
-             <li><a href="#">Sciences</a></li>
-             <li><a href="#">Histories</a></li>
-             <li><a href="#">Politics</a></li>
-             <li><a href="#">Commerce</a></li>
-             <li><a href="#">Design &amp; Technology</a></li>
-             <li><a href="#">LOTE</a></li>
-           </ul>
-         </li>
-       </ul>
-       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-         	<ul id="login-dp" class="dropdown-menu">
-         		<li>
-         			<div class="row">
-         				<div class="col-md-12">
-                  <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-         							<div class="form-group">
-         							 <label class="sr-only" for="exampleInputEmail2">Scotch Email address</label>
-         							 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Scotch Email address" required>
-         							</div>
-         							<div class="form-group">
-         								<label class="sr-only" for="exampleInputPassword2">Password</label>
-         								<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                      <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-         						</div>
-         						<div class="form-group">
-         							<button type="submit" class="btn btn-primary btn-block">Sign in</button>
-         						</div>
-         						<div class="checkbox">
-         							<label>
-         								<input type="checkbox"> keep me logged-in
-         							</label>
-         						</div>
-         					</form>
-         				</div>
-                <div class="bottom text-center">
-                  New here? <a href="#myModal" data-toggle="modal" data-target="#myModal"><b>Join Us</b></a>
+    </nav>
+
+    <div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h1><i class="glyphicon glyphicon-globe"></i> Sign Up</h1>
                 </div>
-         			</div>
-         		</li>
-         	</ul>
-        </div>
-      </nav>
-      <div class="modal fade" id="myModal">
-  	   <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h4 class="modal-title">Sign Up</h4>
-            </div>
-            <div class="modal-body">
-              <form action="Backend/account.php" method="post" id="signUpForm">
-                <div class="form-group">
-                  <label for="inputFullName">Full Name</label>
-                  <input class="form-control" id="inputFullName" placeholder="Enter your full name" type="email">
+                <div class="modal-body">
                 </div>
-                <div class="form-group">
-        		      <label for="inputEmail">Scotch Email address</label>
-        	  	    <input class="form-control" id="inputEmail" placeholder="Enter scotch email" type="email">
-      		      </div>
-    		        <div class="form-group">
-    		  	      <label for="inputPassword">Set Password</label>
-    			        <input class="form-control" id="inputPassword" placeholder="Password" type="password">
-    		        </div>
-                <div class="form-group">
-                  <label for="inputConfirmPassword">Confirm Password</label>
-                  <input class="form-control" id="inputConfirmPassword" placeholder="Confirm Password" type="password">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
                 </div>
-                <div class="form-group">
-                  <label for="yearLevel">Select Year Level</label>
-                  <br>
-                <select class="selectpicker">
-                  <option>Select Year...</option>
-                  <option>Year 7</option>
-                  <option>Year 8</option>
-                  <option>Year 9</option>
-                  <option>Year 10</option>
-                  <option>Year 11</option>
-                  <option>Year 12</option>
-                </select>
-              </div>
-                <div class="form-group">
-                  <label for="inputID">Student Number</label>
-                  <input class="form-control" id="inputID" placeholder="Student Number" type="email">
-                </div>
-            </div>
-            <div class="modal-footer">
-              <a href="#" data-dismiss="modal" class="btn">Close</a>
-              <a onclick="document.getElementById('signUpForm').submit();" class="btn btn-primary">Sign Up</a>
-            </div>
-          </div>
-        </div>
-    </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
   </body>
+
 </html>
