@@ -2,19 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>notesHub</title>
+    <title>noteHub</title>
+
     <!--- Bootstrap & Modified Bootstrap --->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Latest compiled JavaScript -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" >
     <link rel="stylesheet" href="Frontend/css/main.css" charset="utf-8">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.0/css/bootstrap-select.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.0/js/bootstrap-select.min.js"></script>
-    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.0/js/i18n/defaults.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!--- jquery & javascript, pls don't add links you aren't using --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="Backend/js/account.js"></script>
   </head>
   <body>
   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation"> <!--- Start Of Navbar --->
@@ -25,7 +22,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    <a class="navbar-brand" href="#">notesHub</a>
+    <a class="navbar-brand" href="#">noteHub</a>
   </div>
   <div class="collapse navbar-collapse navbar-collapse">
     <ul class="nav navbar-nav">
@@ -63,25 +60,34 @@
        		<li>
        			<div class="row">
        				<div class="col-md-12">
-                <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-       							<div class="form-group">
-       							 <label class="sr-only" for="exampleInputEmail2">Scotch Email address</label>
-       							 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Scotch Email address" required>
+
+                <form accept-charset="UTF-8" action="" class="form" id="login" method="post">
+
+       							<div class="form-group"> <!-- Changed all divs inside form to li. Please fix css. old code: <div class="form-group"> --->
+       							 <label class="sr-only" for="userName">Scotch Email address</label>
+       							 <input autocaptialise="off" autocorrect="off" class="form-control" id="userName" placeholder="Scotch e-mail address" type="email" required>
        							</div>
+
        							<div class="form-group">
-       								<label class="sr-only" for="exampleInputPassword2">Password</label>
-       								<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                    <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-       						</div>
-       						<div class="form-group">
-       							<button type="submit" class="btn btn-primary btn-block">Sign in</button>
-       						</div>
-       						<div class="checkbox">
-       							<label>
-       								<input type="checkbox"> keep me logged-in
-       							</label>
-       						</div>
+       								<label class="sr-only" for="password">Password</label>
+       								<input type="password" class="form-control" id="password" placeholder="Password" required>
+                      <div class="help-block text-right"><a href="">Forgot password?</a></div>
+       					  	</div>
+
+       					  	<div class="form-group">
+       							  <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+       						  </div>
+
+       					  	<div class="checkbox">
+       							  <label>
+       								  <input type="checkbox"> keep me logged-in
+       							  </label>
+       						  </div>
+
        					</form>
+
+
+
        				</div>
        			</div>
        		</li>
@@ -92,12 +98,8 @@
     <div class="hero-unit"> <!---  Start of Hero --->
       <img src="Frontend/img/hero.jpg" alt="Hero Image" style="background-color: rgba(108, 122, 137, 0.5);" />
       <div class="vertical-middle text-center">
-        <h1>Welcome to notesHub!</h1>
+        <h1>Welcome to noteHub!</h1>
       </div>
     </div> <!--- End of Hero --->
-    <!-- jQuery library -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
